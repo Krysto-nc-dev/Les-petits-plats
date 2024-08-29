@@ -1,0 +1,55 @@
+.site-content {
+  height: 100vh;
+  width: 100vw;
+
+  position: relative;
+  padding: 3rem 7%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  .header-logo {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    h1 {
+      color: $primary;
+    }
+  }
+}
+
+.search-bar-container {
+  width: 100%;
+  margin: 2rem 0;
+  position: relative;
+  display: flex;
+  i {
+    position: absolute;
+    color: #333;
+    top: 50%;
+    right: 2%;
+    transform: translateY(-50%);
+    padding-right: 8px;
+    font-size: 2rem;
+  }
+}
+
+.container-tags {
+  display: flex;
+}
+
+.dropdowns-container {
+  margin: 1rem 0;
+  display: flex;
+  @include bigPhone-and-lower {
+    flex-direction: column;
+  }
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  animation: slide-in-right 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  flex-wrap: wrap;
+}
